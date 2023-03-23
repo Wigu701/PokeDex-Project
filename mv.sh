@@ -15,7 +15,7 @@ for D in "./TrainImages"/*; do
 		
 		cd ${D}
 		
-		mkdir -p "../../TestImages/${D}" && cp `ls | head -$ceiling_result` "../../TestImages/${D}"
+		mkdir -p "../../TestImages/${D}" && mv `ls | head -$ceiling_result` "../../TestImages/${D}"
 		
 		cd ../..
     fi
