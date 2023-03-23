@@ -7,7 +7,7 @@ def move_testing(foldername, entry, trainfolder, testfolder):
     images = os.listdir(cur)
     np.random.shuffle(images)
 
-    # Move first 15% to testing
+    # Move images to appropriate subfolder in testing and training
     testDest = testFolder + "/" + entry
     trainDest = trainFolder + "/" + entry
 
@@ -17,7 +17,7 @@ def move_testing(foldername, entry, trainfolder, testfolder):
     if not os.path.exists(trainDest):
             os.makedirs(trainDest)
 
-
+    # First 15% in testing, rest training
     for i in range(int(len(images) * 0.15)):
         os.rename(cur + "/" + images[i], testDest + "/" + images[i])
 
@@ -31,9 +31,9 @@ def move_testing(foldername, entry, trainfolder, testfolder):
 if __name__ == "__main__":
     foldername = sys.argv[1]
 
-    # Create subfolders
-    trainFolder = foldername + "/TrainImages"
-    testFolder = foldername + "/TestImages"
+    # Create Target Folders
+    trainFolder = "TrainImages"
+    testFolder = "TestImages"
 
     if not os.path.exists(trainFolder):
             os.makedirs(trainFolder)
