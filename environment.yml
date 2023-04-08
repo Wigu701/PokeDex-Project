@@ -1,0 +1,17 @@
+# To create a new conda environment with the following required packages, run
+#
+#    conda env create -f enviroment.yml && conda activate pokedex
+#
+#
+
+name: pokedex
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.8
+  - matplotlib
+  - numpy
+  - pandas
+  - tensorflow
+
