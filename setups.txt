@@ -1,3 +1,3 @@
 v1_1 Resnet50, shared train/val
 v2_1 Resnet50V2, unshared train/val
-v2_2 Shared train/val, high augmentation, regularization
+v2_2 Shared train/val, regularization, lower fine tuning training rate
