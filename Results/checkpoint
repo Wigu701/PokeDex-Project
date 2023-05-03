@@ -1,2 +1,2 @@
-model_checkpoint_path: "r50v2_2"
-all_model_checkpoint_paths: "r50v2_2"
+model_checkpoint_path: "r50v2_3"
+all_model_checkpoint_paths: "r50v2_3"
